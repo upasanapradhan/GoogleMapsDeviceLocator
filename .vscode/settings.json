@@ -6,5 +6,6 @@
     },
     "particle.firmwareVersion": "5.8.0",
     "particle.targetPlatform": "p2",
-    "particle.targetDevice": "UPhoton"
+    "particle.targetDevice": "UPhoton",
+    "cmake.sourceDirectory": "/Users/upasanap/Documents/TechnologyDesignFoundations/Project4/GoogleMapsDeviceLocator/lib/ArduinoJson/src"
 }

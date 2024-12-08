@@ -32,6 +32,11 @@ void locationCallback(float lat, float lon, float accuracy) {
   // - Longitude
   // - Accuracy of estimated location (in meters)
   Serial.printlnf("Location: %.5f, %.5f, Accuracy: %.2fm", lat, lon, accuracy);
+
+    // Publish location to the Particle Cloud
+  String locationData = String::format("{\"lat\": %.5f, \"lon\": %.5f, \"accuracy\": %.2f}", lat, lon, accuracy);
+  Particle.publish("device_location", locationData, PRIVATE);
+  
 }
 
 void loop() {
